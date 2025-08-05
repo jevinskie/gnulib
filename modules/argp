@@ -37,6 +37,8 @@ stdio-h
 strerror
 memchr
 memmove
+prog-invoc-name [test $HAVE_ARGP = 0 || test $REPLACE_ARGP = 1]
+
 
 configure.ac:
 gl_ARGP

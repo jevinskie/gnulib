@@ -1,0 +1,25 @@
+Description:
+Program name strings from glibc errno.h: program_invocation_{,short_}name
+
+Files:
+lib/prog-invoc-name.c
+
+Depends-on:
+
+configure.ac:
+gl_FUNC_MALLOC_GNU
+if test $REPLACE_MALLOC_FOR_MALLOC_GNU = 1; then
+  AC_LIBOBJ([malloc])
+fi
+gl_STDLIB_MODULE_INDICATOR([malloc-gnu])
+
+Makefile.am:
+
+Include:
+<prog-invoc-name.h>
+
+License:
+public domain
+
+Maintainer:
+jevinsweval@gmail.com
