@@ -17,7 +17,8 @@ AC_DEFUN([gl_PROG_INVOC_NAME],
     [program_invocation_name, program_invocation_short_name],
     [],
     [HAVE_PROG_INVOC_NAME=0],
-    [[#include <errno.h>]])
+    [[#define _GNU_SOURCE \
+    #include <errno.h>]])
 ])
 
 

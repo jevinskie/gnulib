@@ -26,10 +26,12 @@
 extern "C" {
 # endif
 
+#ifdef _GNU_SOURCE
 extern char *program_invocation_short_name, *program_invocation_name;
+#endif
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif
+#endif /* _PROG_INVOC_NAME_H */
